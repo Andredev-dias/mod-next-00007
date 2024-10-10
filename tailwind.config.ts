@@ -9,9 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        branco: "var(--background)",
-        preto: "var(--foreground)",
+        branca: "var(--branca)",
+        preta: "var(--preta)",
+        vermelha: "var(--vermelha)"
       },
+      fontSize: {
+
+      },
+      fontFamily: {
+        rob: "var(--roboto)"
+      },
+      
     },
   },
   plugins: [],
