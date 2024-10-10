@@ -29,7 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Menu op1="useEffect com fetch" op2="useEffect com axios"/>
+        <Menu
+         op1="useEffect com fetch"
+          op2="useEffect com axios"
+          op3="Server side"
+          />
         {children}
       </body>
     </html>

@@ -1,10 +1,12 @@
 "use client"
 import { useEffect, useState, Suspense } from "react"
 import { api } from "@/constants/api"
+import Link from "next/link";
 
 interface IData {
     name: string;
     status: string;
+    id: string;
 }
 
 const AxiosPage = () => {
@@ -29,6 +31,7 @@ useEffect(() => {
                     <div key={index}>
                         <h2>{item.name}</h2>
                         <p>{item.status}</p>
+                        <Link href={`/perso/${item.id}`}>ABRIR</Link>
                         <br />
                     </div>
                     
